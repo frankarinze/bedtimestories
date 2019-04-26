@@ -62,11 +62,22 @@ public class StoryDetail extends AppCompatActivity {
                         mLinearLayout.setVisibility(View.VISIBLE);
                     }
 
+
+
                     @Override
                     public void onFailure(Call<StoryResponse> call, Throwable t) {
 
                     }
                 });
+
+
+        mAddComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(StoryDetail.this,CommentsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void initViews(){
