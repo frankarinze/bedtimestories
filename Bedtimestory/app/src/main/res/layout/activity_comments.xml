@@ -72,7 +72,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="118dp"
             android:layout_marginBottom="139dp"
-            android:background="@drawable/black_background"
+            android:background="#fff"
             android:gravity="center"
             android:hint="Add a coment"
             android:textColor="@color/colorBlack" />
